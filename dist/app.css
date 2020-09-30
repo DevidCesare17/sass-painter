@@ -111,28 +111,38 @@ a {
   color: #ffffff;
 }
 
-.hero_section .descript_contnr p:first-child {
+.hero_section .cont_hero {
+  height: 100%;
+  position: relative;
+}
+
+.hero_section .cont_hero .descript_contnr {
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.hero_section .cont_hero .descript_contnr p:first-child {
   font-size: 26px;
   margin-bottom: 25px;
 }
 
-.hero_section .descript_contnr p:nth-child(2) {
+.hero_section .cont_hero .descript_contnr p:nth-child(2) {
   font-size: 20px;
   margin-bottom: 25px;
 }
 
-.hero_section .descript_contnr .description_list {
+.hero_section .cont_hero .descript_contnr .description_list {
   display: block;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
-.hero_section .descript_contnr .description_list li {
+.hero_section .cont_hero .descript_contnr .description_list li {
   margin-bottom: 10px;
 }
 
-.hero_section .descript_contnr .description_list li::before {
+.hero_section .cont_hero .descript_contnr .description_list li::before {
   content: "\F105";
   font-size: 14px;
   font-weight: 700;
@@ -141,29 +151,100 @@ a {
   color: #989898;
 }
 
-.hero_section .descript_contnr .btn_download {
+.hero_section .cont_hero .descript_contnr .btn_download {
   color: #ffffff;
+  cursor: pointer;
+  width: 200px;
 }
 
-.hero_section .descript_contnr .btn_download .content_dl {
+.hero_section .cont_hero .descript_contnr .btn_download .content_dl {
   background-color: #5B5C59;
-  width: 200px;
   align-items: center;
   justify-content: center;
 }
 
-.hero_section .descript_contnr .btn_download .content_dl div:first-child {
+.hero_section .cont_hero .descript_contnr .btn_download .content_dl div:first-child {
   padding: 10px;
   font-size: 14px;
 }
 
-.hero_section .descript_contnr .btn_download .content_dl div:first-child span {
+.hero_section .cont_hero .descript_contnr .btn_download .content_dl div:first-child span {
   display: block;
 }
 
-.hero_section .descript_contnr .btn_download .content_dl div:nth-child(2) {
+.hero_section .cont_hero .descript_contnr .btn_download .content_dl div:nth-child(2) {
   font-size: 26px;
   border-left: 1px solid #ffffff;
   padding: 0 10px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 50px;
+  height: calc(100% - 20px);
+}
+
+.hero_section .cont_hero .buy_ltd_offer .pricing {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .pricing .price_dl {
+  font-size: 24px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .pricing .price_dl span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #989898;
+  margin-top: 10px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .btn_buy_now {
+  color: #ffffff;
+  background-color: #28ACFF;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 5px 30px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .limited_time_offer {
+  margin-top: 40px;
+  display: block;
+  background-color: #ffffff;
+  color: #101010;
+  padding: 15px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .limited_time_offer p:nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .limited_time_offer p:nth-child(2) {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .limited_time_offer p:nth-child(3) {
+  color: #4A9CFD;
+  font-size: 14px;
+}
+
+.hero_section .cont_hero .buy_ltd_offer .limited_time_offer:hover p:nth-child(3) {
+  text-decoration: underline;
+}
+
+.hero_section .cont_hero .name_dis_abs {
+  position: absolute;
+  bottom: 20px;
+  left: 90px;
+  color: #ffffff;
+  font-size: 12px;
 }
 

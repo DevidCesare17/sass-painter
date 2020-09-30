@@ -4,61 +4,136 @@
   background-color: darkgreen;
   color: $color_white;
 
-  & .descript_contnr{
+  & .cont_hero {
+    height: 100%;
+    position: relative;
 
-    & p:first-child {
-      font-size: 26px;
-      margin-bottom: $margin_bottom_25px;
-    }
+    & .descript_contnr{
+      margin-left: auto;
+      margin-top: 50px;
 
-    & p:nth-child(2) {
-      font-size: 20px;
-      margin-bottom: $margin_bottom_25px;
-    }
-
-    & .description_list {
-      display: block;
-      font-size: 18px;
-      font-weight: 300;
-      margin-bottom: $margin_bottom_25px;
-
-      & li {
-        margin-bottom: 10px;
+      & p:first-child {
+        font-size: 26px;
+        margin-bottom: $margin_bottom_25px;
       }
 
-      & li::before {
-        content: "\F105";
-        font-size: 14px;
-        font-weight: 700;
-        font-family: "Font Awesome 5 Free";
-        padding-right: 10px;
-        color: #989898;
+      & p:nth-child(2) {
+        font-size: 20px;
+        margin-bottom: $margin_bottom_25px;
       }
-    }
 
-    & .btn_download {
-      color: $color_white;
+      & .description_list {
+        display: block;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: $margin_bottom_25px;
 
-      & .content_dl {
-        background-color: #5B5C59;
-        width: 200px;
-        align-items: center;
-        justify-content: center;
+        & li {
+          margin-bottom: 10px;
+        }
 
-        & div:first-child {
-          padding: 10px;
+        & li::before {
+          content: "\F105";
           font-size: 14px;
+          font-weight: 700;
+          font-family: "Font Awesome 5 Free";
+          padding-right: 10px;
+          color: #989898;
+        }
+      }
 
-          & span{
-            display: block;
+      & .btn_download {
+        color: $color_white;
+        cursor: pointer;
+        width: 200px;
+
+        & .content_dl {
+          background-color: #5B5C59;
+          align-items: center;
+          justify-content: center;
+
+          & div:first-child {
+            padding: 10px;
+            font-size: 14px;
+
+            & span{
+              display: block;
+            }
+          }
+          & div:nth-child(2) {
+            font-size: 26px;
+            border-left: 1px solid $color_white;
+            padding: 0 10px;
           }
         }
-        & div:nth-child(2) {
-          font-size: 26px;
-          border-left: 1px solid $color_white;
-          padding: 0 10px;
+      }
+    }
+
+    & .buy_ltd_offer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      margin-top: 20px;
+      margin-left: 50px;
+      height: calc(100% - 20px);
+
+      & .pricing {
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 15px;
+
+        & .price_dl {
+          font-size: 24px;
+
+          & span {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            color: #989898;
+            margin-top: 10px;
+          }
         }
       }
+
+      & .btn_buy_now {
+        color: $color_white;
+        background-color: #28ACFF;
+        font-weight: 300;
+        font-size: 14px;
+        padding: 5px 30px;
+      }
+
+      & .limited_time_offer {
+        margin-top: 40px;
+        display: block;
+        background-color: $color_white;
+        color: $color_black;
+        padding: 15px;
+
+        & p:nth-child(1) {
+          font-weight: 700;
+          font-size: 18px;
+        }
+        & p:nth-child(2) {
+          font-weight: 300;
+          font-size: 14px;
+          margin: 10px 0;
+        }
+        & p:nth-child(3) {
+          color: #4A9CFD;
+          font-size: 14px;
+        }
+      }
+      & .limited_time_offer:hover p:nth-child(3){
+        text-decoration: underline;
+      }
+    }
+
+    & .name_dis_abs {
+      position: absolute;
+      bottom: 20px;
+      left: 90px;
+      color: $color_white;
+      font-size: $fontSize_12;
     }
   }
 }
