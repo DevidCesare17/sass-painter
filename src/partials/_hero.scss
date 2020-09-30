@@ -1,0 +1,64 @@
+.hero_section {
+  height: 500px;
+  // background-image: url("../../img/hero-painteressentials-7.jpg");
+  background-color: darkgreen;
+  color: $color_white;
+
+  & .descript_contnr{
+
+    & p:first-child {
+      font-size: 26px;
+      margin-bottom: $margin_bottom_25px;
+    }
+
+    & p:nth-child(2) {
+      font-size: 20px;
+      margin-bottom: $margin_bottom_25px;
+    }
+
+    & .description_list {
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: $margin_bottom_25px;
+
+      & li {
+        margin-bottom: 10px;
+      }
+
+      & li::before {
+        content: "\F105";
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Font Awesome 5 Free";
+        padding-right: 10px;
+        color: #989898;
+      }
+    }
+
+    & .btn_download {
+      color: $color_white;
+
+      & .content_dl {
+        background-color: #5B5C59;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+
+        & div:first-child {
+          padding: 10px;
+          font-size: 14px;
+
+          & span{
+            display: block;
+          }
+        }
+        & div:nth-child(2) {
+          font-size: 26px;
+          border-left: 1px solid $color_white;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
