@@ -1,0 +1,67 @@
+.header_section {
+  background-color: $color_black;
+  padding-top: 10px;
+
+  .main_header_list{
+    justify-content: flex-end;
+
+    & li:not(:last-child) {
+      margin-right: 20px;
+
+      & i {
+        color: #009CFF;
+        font-size: 14px;
+        margin-right: 10px;
+      }
+      & a {
+        font-size: $fontSize_12;
+        color: $color_link_contacts;
+
+        &:hover {
+          color: $color_white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .main_header_list{
+    & select {
+     outline: none;
+     font-size: $fontSize_12;
+    }
+  }
+
+  .section_prod_list {
+    align-items: center;
+    margin-top: 10px;
+
+    & .main_logo img {
+      cursor: pointer;
+      max-width: 100px;
+      margin-right: 30px;
+    }
+
+    & .nav_header_list li {
+      padding: 15px 25px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color_white;
+        color: $color_black;
+      }
+      &:hover a{
+        color: $color_black;
+      }
+      &:hover .open_menu_ang::after{
+        color: $color_black;
+      }
+
+      & a{
+        color: $color_white;
+        font-size: 14px;
+      }
+    }
+  }
+
+}

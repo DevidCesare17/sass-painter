@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+.d_flex{
+  display: flex;
+}
+
+.open_menu_ang::after{
+  content: "\F107";
+  font-weight: 700;
+  font-size: $fontSize_12;
+  font-family: "Font Awesome 5 Free";
+  padding: 5px;
+  color: $color_white;
+}
