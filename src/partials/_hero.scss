@@ -1,7 +1,7 @@
 .hero_section {
-  height: 500px;
-  // background-image: url("../../img/hero-painteressentials-7.jpg");
-  background-color: darkgreen;
+  @include backgroundImg;
+  background-image: url("../img/hero-painteressentials-7.jpg");
+  height: 460px;
   color: $color_white;
 
   & .cont_hero {

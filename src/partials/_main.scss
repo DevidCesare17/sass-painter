@@ -1,0 +1,251 @@
+// nav-section main
+.nav_section_switch {
+  background-color: #E6E6E6;
+
+  & .switch_page_list {
+    align-items: center;
+
+    & li {
+      padding: 20px 0px;
+      text-align: center;
+      width: 145px;
+      height: 65px;
+
+      & a {
+        font-size: 18px;
+        color: $color_black;
+        font-weight: 300;
+      }
+
+      &:hover {
+        background-color: $color_white;
+        border-bottom: 2px solid $color_black;
+      }
+
+      &:hover a {
+        font-weight: 500;
+      }
+    }
+  }
+}
+// /nav-section main
+
+// painting software section
+.painting_software {
+  @include backgroundImg;
+  background-image: url("../img/intro.jpg");
+  color: $color_white;
+  text-align: center;
+  padding-top: 80px;
+
+  & .descr_guide {
+
+    & h2 {
+      font-size: 30px;
+      margin-bottom: $margin_bottom_25px;
+    }
+
+    & p {
+      font-size: 20px;
+      margin-bottom: $margin_bottom_25px;
+    }
+
+    & a {
+      color: $color_white;
+      font-size: 18px;
+
+      & img {
+        vertical-align: middle;
+        width: 35px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .img_guide_cntnr {
+    margin-top: 75px;
+
+    & .comp_img img {
+      max-width: 80%;
+    }
+  }
+}
+// /painting software section
+
+// artificial intelligence section
+.artif_intel {
+  text-align: center;
+  padding-top: 80px;
+
+  & .descr_ai {
+    & h2 {
+      @include h2Main;
+    }
+
+    & p {
+      @include paragraphMain;
+    }
+  }
+
+  & .ai_img img {
+    max-width: 80%;
+  }
+}
+// /artificial intelligence section
+
+// flexible photo section
+.flexible_photo {
+  background-color: #222222;
+  color: $color_white;
+  padding-top: 80px;
+  text-align: center;
+
+  & .descr_flexphoto {
+    & h2 {
+      @include h2Main;
+    }
+
+    & p {
+      @include paragraphMain;
+    }
+  }
+
+  & .flexphoto_img img{
+    max-width: 80%;
+  }
+
+  & .first_part_this {
+    @include mainDarkSection;
+
+    & .desc_part_this {
+      width: 40%;
+
+      & h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: 18px;
+      }
+    }
+
+    & .img_part_this {
+      width: 50%;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  & .second_part_this {
+    @include mainDarkSection;
+    padding-bottom: 80px;
+
+    & .img_part_this {
+      width: 50%;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    & .desc_part_this {
+      width: 40%;
+
+      & h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+// /flexible photo section
+
+// section img choose
+
+// /section img choose
+.img_choose {
+  text-align: center;
+  margin-top: 60px;
+
+  & h2 {
+    color: $color_black;
+    font-size: 30px;
+  }
+
+  & .first_choose_img {
+    width: calc(100% / 5);
+    height: auto;
+    margin: 50px 20px;
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    & .type_img_choose {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: $color_white;
+      font-size: 18px;
+    }
+  }
+}
+
+// last section main
+.additional_things {
+  @include backgroundImg;
+  background-image: url("../img/brushpacks-bg.jpg");
+  padding: 100px 0;
+
+  & .div_first_add {
+    background-color: $color_white;
+    padding: 60px 40px 80px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 45%;
+
+    & h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      line-height: 30px;
+    }
+  }
+
+  & .div_second_expl {
+    background-color: $color_white;
+    padding: 60px 40px 80px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 45%;
+
+    & h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      line-height: 30px;
+    }
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+// /last section main
